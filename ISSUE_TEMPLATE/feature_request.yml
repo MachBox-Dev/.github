@@ -1,0 +1,30 @@
+name: 💡 Feature Request
+description: Propose a new feature or workflow enhancement
+title: "[FEATURE] "
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We prioritize enhancements that align with the core philosophy in `PRINCIPLES.md`. Please focus heavily on the *problem* you are trying to solve before prescribing the solution.
+  - type: textarea
+    id: use_case
+    attributes:
+      label: The Problem / Use Case
+      description: What workflow friction are you experiencing? Why do you need this?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: How do you envision this working in the app?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you tried any workarounds?
+    validations:
+      required: false

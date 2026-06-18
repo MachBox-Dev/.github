@@ -1,0 +1,59 @@
+name: 🐛 Bug Report
+description: Report a reproducible bug in a MachBox application
+title: "[BUG] "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug. Before submitting, please ensure you are running the latest release and have searched existing issues.
+  - type: input
+    id: version
+    attributes:
+      label: Application Version
+      description: What version of the Mach tool are you running?
+      placeholder: e.g., 0.1.0-beta
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      options:
+        - macOS
+        - Windows
+        - Linux
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Step-by-step instructions on how to reproduce the bug.
+      placeholder: |
+        1. Open Mach Terminal
+        2. Run command X
+        3. See error Y
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Screenshots
+      description: Paste any relevant logs, traces, or screenshots here.
+    validations:
+      required: false
